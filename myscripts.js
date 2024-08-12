@@ -4,21 +4,22 @@ let humanScore = 0;
 let computerScore = 0;
 
 function getComputerChoice() {
-    let compResult = Math.floor(Math.random() * 3) + 1;
-        if (compResult === 1) {
-            compResult = "rock"
-        } else if (compResult === 2) {
-            compResult = "paper"
+    let computerChoice = Math.floor(Math.random() * 3) + 1;
+        if (computerChoice === 1) {
+            computerChoice = "rock"
+        } else if (computerChoice === 2) {
+            computerChoice = "paper"
         } else {
-            compResult = "scissors"
+            computerChoice = "scissors"
         }
 }
 
 function getHumanChoice() {
-    let userChoice = prompt("Please type rock, paper or scissors:");
+    let humanChoice = prompt("Please type rock, paper or scissors:");
+    humanChoice;
 }
 
-function playGame() {
+function playRound(computerChoice, humanChoice)  {
     getHumanChoice();
-    getComputerChoice;
+    getComputerChoice();
 }
