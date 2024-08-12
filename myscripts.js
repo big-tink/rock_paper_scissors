@@ -16,7 +16,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let humanChoice = prompt("Please type rock, paper or scissors:");
+    let humanChoice = prompt("We are playing first to 5 wins. \nPlease type rock, paper or scissors:");
     humanChoice = humanChoice.toLowerCase();
     return humanChoice;
 }
