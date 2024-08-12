@@ -1,4 +1,5 @@
-console.log("Hello World!")
+alert("Welcome to rock, paper, scissors!\nPlease press ctrl + shift + c to open console.\nClick ok and proceed following instructions on the console.")
+console.log("Hello user!\nPlease type playGame() and press enter to start playing.\nThis is case sensitive.")
 
 let humanScore = 0;
 let computerScore = 0;
@@ -78,9 +79,10 @@ function playGame() {
             console.log("If you would like to play again, please refresh the page.")
             console.log("If not, it was fun playing you. Have a great day!")
         } else {
-            playGame()
+            console.log("Next round!")
+            playGame();
         }
+
 }
 
-playGame()
 
