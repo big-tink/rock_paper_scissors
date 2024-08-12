@@ -61,7 +61,26 @@ function playRound()  {
         console.log("You have selected " + humanSelection + ". Computer has selected " + computerSelection + ".")
         console.log("It's a tie! Score remains the same.")
     }
+
+    return (humanScore, computerScore)
 }
 
-playRound()
+function playGame() {
+
+    playRound();
+
+        if (humanScore === 5) {
+            console.log("Congratulations! You have won the game!")
+            console.log("If you would like to play again, please refresh the page.")
+            console.log("If not, it was fun playing you. Have a great day!")
+        } else if (computerScore === 5) {
+            console.log("Better luck next time!")
+            console.log("If you would like to play again, please refresh the page.")
+            console.log("If not, it was fun playing you. Have a great day!")
+        } else {
+            playGame()
+        }
+}
+
+playGame()
 
