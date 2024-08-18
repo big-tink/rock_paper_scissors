@@ -12,12 +12,7 @@ function getComputerChoice() {
             computerChoice = "scissors"
         }
         return computerChoice;
-}
-function getHumanChoice() {
-    let humanChoice = prompt("We are playing first to 5 wins. \nPlease type rock, paper or scissors:");
-    humanChoice = humanChoice.toLowerCase();
-    return humanChoice;
-}
+};
 
 function playRound()  {
 
@@ -61,25 +56,35 @@ function playRound()  {
     }
 
     return (humanScore, computerScore)
-}
+};
 
-function playGame() {
-
+function getHumanChoice(x) {
+    let humanChoice = x
+    return humanChoice;
     playRound();
+};
 
-        if (humanScore === 5) {
-            console.log("Congratulations! You have won the game!")
-            console.log("If you would like to play again, please refresh the page.")
-            console.log("If not, it was fun playing you. Have a great day!")
-        } else if (computerScore === 5) {
-            console.log("Better luck next time!")
-            console.log("If you would like to play again, please refresh the page.")
-            console.log("If not, it was fun playing you. Have a great day!")
-        } else {
-            console.log("Next round!")
-            playGame();
-        }
+// function playGame() {
 
-}
+//     playRound();
 
+//         if (humanScore === 5) {
+//             console.log("Congratulations! You have won the game!")
+//             console.log("If you would like to play again, please refresh the page.")
+//             console.log("If not, it was fun playing you. Have a great day!")
+//         } else if (computerScore === 5) {
+//             console.log("Better luck next time!")
+//             console.log("If you would like to play again, please refresh the page.")
+//             console.log("If not, it was fun playing you. Have a great day!")
+//         } else {
+//             console.log("Next round!")
+//             playGame();
+//         }
 
+// }
+
+const btnRock = document.querySelector(".rock");
+const btnPaper = document.querySelector(".paper");
+const btnScissors = document.querySelector(".scissors");
+
+btnRock.addEventListener("click", getHumanChoice());
