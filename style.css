@@ -9,6 +9,7 @@ body {
 .choices {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 button {
