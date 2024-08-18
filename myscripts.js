@@ -1,5 +1,3 @@
-alert("Welcome to rock, paper, scissors!\nPlease press ctrl + shift + c to open console.\nClick ok and proceed following instructions on the console.")
-console.log("Hello user!\nPlease type playGame() and press enter to start playing.\nThis is case sensitive.")
 
 let humanScore = 0;
 let computerScore = 0;
@@ -15,7 +13,6 @@ function getComputerChoice() {
         }
         return computerChoice;
 }
-
 function getHumanChoice() {
     let humanChoice = prompt("We are playing first to 5 wins. \nPlease type rock, paper or scissors:");
     humanChoice = humanChoice.toLowerCase();

@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <script src="myscripts.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    
+
+    <h1>Rock Paper Scissors</h1>
+
+    <p>Welcome! We will be playing until either a set or match is won.</p>
+
+    <ul>Rules:</ul>
+        <li>Rock beats Scissors</li>
+        <li>Paper beats Rock</li>
+        <li>Scissors beats Paper</li>
+        <li>A set is won by being the first to 5 wins</li>
+        <li>A match is won by being the first to 5 set wins</li>
+
+    <div class="humanInput">
+        <h2>Please make your selection:</h2>
+        <div class="choices">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissors">Scissors</button>
+        </div>
+    </div>
+
+    <div class="currentGame"></div>
+
+    <div class="resultsContainer"></div>
+
 </body>
 </html>
